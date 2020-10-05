@@ -65,7 +65,7 @@ void WarlockPetStrategy::InitTriggers(std::list<TriggerNode*> &triggers)
 {
     triggers.push_back(new TriggerNode(
         "no pet",
-        //NextAction::array(0, new NextAction("summon imp", 10.0f), NULL)));
+        NextAction::array(0, new NextAction("summon imp", 10.0f), NULL)));
         NextAction::array(0, new NextAction("summon felguard", 30.0f), NULL)));
     // TODO Warlock pets
 
