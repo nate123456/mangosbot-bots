@@ -380,7 +380,7 @@ bool RandomPlayerbotMgr::ProcessBot(Player* player)
         }
         else
         {
-            sLog.outString("Bot %d from <%s> is refreshed and sent to city for %d minutes", bot, sGuildMgr.GetGuildById(player->GetGuildId())->GetName(), int(randomChange / 60));
+            sLog.outString("Bot %d from <%s> is refreshed and sent to city for %d minutes", bot, sGuildMgr.GetGuildById(player->GetGuildId())->GetName().c_str(), int(randomChange / 60));
         }
 
         uint32 randomTime = urand(sPlayerbotAIConfig.minRandomBotRandomizeTime, sPlayerbotAIConfig.maxRandomBotRandomizeTime);
